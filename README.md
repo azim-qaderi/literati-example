@@ -1,3 +1,12 @@
+# Response Comments
+1.  As per the request, Promotion post type should include "Header, Text, Button, Image". Post type "support" has been added (  no custom fields ), assuming:
+    * Header => 'title'
+    * Text => 'edit'
+    * Button => Post URL
+    * Image => 'thumbnail'
+
+2.  For some reasons, I wasn't able to run the "make" commands/file on my Windows machine, let me know if something doesn't work on your end or if there is any questions.
+
 # Literati WordPress Plugin Exercise
 Congratulations! We are really excited that you are interested in joining Literati Engineering and have made it to this stage. 
 
