@@ -1,0 +1,101 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+$color-white: white;
+$color-black: black;
+$primary-color: #75cac8;
+$primary-hover: #459492;
+$secondary-color: #291958;
+$secondary-lighter: #e0d9f3;
+
+.wp-block-literati-example-carousel {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: $secondary-lighter;
+}
+
+.slide-arrows {
+	display: flex;
+	justify-content: space-between;
+	background-color: $secondary-color;
+	padding: 5px 15px;
+
+	button {
+		background: none;
+		border: 0;
+		padding: 0;
+		color: $color-white;
+		font-size: 25px;
+		font-weight: bold;
+		cursor: pointer;
+	}
+}
+
+.slide-wrapper {
+	.no-post {
+		text-align: center;
+		padding: 20px;
+	}
+	
+	.slick-slide {
+		&:not(.slick-current) {
+			opacity: 0.6;
+			transform: scale(0.85);
+		}
+	}
+
+	.slide {
+		display: flex !important;
+		justify-content: center;
+		max-width: 500px;
+		margin: 30px;
+		background-color: $color-white;
+		color: $color-black;
+		border-radius: 20px;
+		overflow: hidden;
+		box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+
+		.slide-content {
+			padding: 50px 25px;
+
+			h2 {
+				margin: 0;
+				color: $primary-color;
+			}
+		}
+
+		.slide-excerpt p{
+			line-height: 1.4;
+			font-size: 16px;
+		}
+
+		.slide-photo {
+			img {
+				max-width: 200px;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		.slide-button {
+			display: inline-block;
+			text-decoration: none;
+			background-color: $primary-color;
+			color: $color-white;
+			text-transform: uppercase;
+			font-weight: bold;
+			padding: 10px 25px;
+			transition: 0.2s all ease-in;
+			font-size: 16px;
+
+			&:hover {
+				background-color: $primary-hover;
+			}
+		}
+	}
+}
